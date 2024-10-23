@@ -52,9 +52,9 @@ console.log(data);
       />
       <View style={styles.info}>
         <Text style={styles.name}>{item.name}</Text>
-        <Text style={styles.street}>{item.street}</Text>
+        <Text style={styles.street}>Ubicación: {item.street}</Text>
         <Text style={styles.timing}>
-          {item.opening_time} - {item.closing_time}
+          Horario: {item.opening_time} - {item.closing_time}
         </Text>
       </View>
     </TouchableOpacity>
