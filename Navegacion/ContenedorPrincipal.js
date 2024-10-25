@@ -47,9 +47,9 @@ function MainContainer() {
             let rn = route.name;
 
             if (rn === InicioRestaurante) {
-              iconName = focused ? 'home' : 'home-outline';
+              iconName = focused ? 'restaurant' : 'restaurant-outline';
             } else if (rn === DetallesNosotros) {
-              iconName = focused ? 'list' : 'list-outline';
+              iconName = focused ? 'people-sharp' : 'people-outline';
             }
 
             return <Ionicons name={iconName} size={size} color={color} />;
