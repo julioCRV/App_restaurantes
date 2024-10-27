@@ -1,13 +1,13 @@
 {
   "expo": {
     "name": "SEV",
-    "slug": "SEV",
+    "slug": "App_Restaurantes",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/app_icono.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/app_icono.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -16,7 +16,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/app_icono.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.juliocrv.App_Restaurantes"
