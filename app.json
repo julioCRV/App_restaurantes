@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "App_Restaurantes",
-    "slug": "App_Restaurantes",
+    "name": "SEV",
+    "slug": "SEV",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/app_icono.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -28,6 +28,12 @@
       "eas": {
         "projectId": "633e5307-fccf-44f3-af07-369074df463e"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/633e5307-fccf-44f3-af07-369074df463e"
     }
   }
 }
