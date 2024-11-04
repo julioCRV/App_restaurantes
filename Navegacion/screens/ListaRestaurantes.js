@@ -79,7 +79,7 @@ const RestaurantList = ({ navigation }) => {
             <View style={styles.infoContainer}>
               <View style={styles.infoItem}>
                   <Icon name="time" size={16} color="tomato" />
-                <Text style={styles.timing}> Horario:</Text>
+                <Text style={styles.timing}></Text>
 
                 <Text style={styles.timing}> {item.opening_time} - {item.closing_time}</Text>
               </View>

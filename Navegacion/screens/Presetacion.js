@@ -40,12 +40,12 @@ const Presentacion = ({ onPress }) => {
             >
                 <View style={styles.textContainer}>
                     <Text style={styles.title}>SEV</Text>
-                    <Text style={styles.meaning}>Servicio Eficiente de Ventas</Text>
+                    {/* <Text style={styles.meaning}>Servicio Eficiente de Ventas</Text>
                     <Text style={styles.description}>
                         Descubre una amplia variedad de restaurantes, explora sus menús,
                         contacta con ellos y conoce sus sucursales y servicios de manera
                         rápida y fácil.
-                    </Text>
+                    </Text> */}
                     <Animated.View style={[styles.iconContainer, { transform: [{ translateY: bounceAnim }] }]}>
                         <Icon name='angle-dobule-down' size={20} color={'tomato'} />
                     </Animated.View>
