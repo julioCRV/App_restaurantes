@@ -76,14 +76,12 @@ const RestaurantList = ({ navigation }) => {
               </View>
             </View> */}
 
-            <View style={styles.infoContainer}>
-              <View style={styles.infoItem}>
-                  <Icon name="time" size={16} color="tomato" />
-                <Text style={styles.timing}></Text>
 
-                <Text style={styles.timing}> {item.opening_time} - {item.closing_time}</Text>
-              </View>
+            <View style={styles.infoItem}>
+              <Icon name="time" size={16} color="tomato" />
+              <Text style={styles.timing}> {item.opening_time} - {item.closing_time}</Text>
             </View>
+
 
           </View>
         </TouchableOpacity>
@@ -108,7 +106,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#0B0B0D',
     paddingTop: 50,
-    padding: 10
+    padding: 10,
   },
   infoContainer: {
     flexDirection: 'row',
@@ -116,8 +114,12 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   infoItem: {
+    paddingTop: 12,
+    paddingLeft: 52,
     flexDirection: 'row',
-    alignItems: 'left',
+    // textAlign: 'center',
+    // alignContent: 'center',
+    // textAlign: 'center'
   },
   card: {
     flexDirection: 'row',
@@ -136,18 +138,17 @@ const styles = StyleSheet.create({
   },
   info: {
     flex: 1,
-    textAlign: 'center',
-    alignItems: 'left',
-    paddingLeft: 25,
+    flexDirection: 'column',
 
   },
   name: {
     fontSize: 15,
     fontWeight: 'bold',
-    textAlign: 'center',
+    paddingLeft: 52,
+    // textAlign: 'center',
     color: '#f5f5f6',
     paddingTop: 25,
-    paddingRight:25
+    paddingRight: 25
   },
   street: {
     fontSize: 12,
