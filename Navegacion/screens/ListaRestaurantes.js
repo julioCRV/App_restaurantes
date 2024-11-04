@@ -7,6 +7,7 @@ import Animated, {
   withSpring,
 } from 'react-native-reanimated';
 import { PanGestureHandler } from 'react-native-gesture-handler';
+import Icon from 'react-native-vector-icons/Ionicons'
 
 const RestaurantList = ({ navigation }) => {
   const [data, setData] = useState([]);
@@ -53,7 +54,7 @@ const RestaurantList = ({ navigation }) => {
 
   const renderItem = ({ item }) => (
     <PanGestureHandler onGestureEvent={gestureHandler}>
-      <Animated.View style={[ animatedStyle]}>
+      <Animated.View style={[animatedStyle]}>
         <TouchableOpacity
           style={styles.card}
           onPress={() => navigation.navigate('DetallesRestaurante', { item })}
@@ -65,7 +66,7 @@ const RestaurantList = ({ navigation }) => {
           <View style={styles.info}>
             <Text style={styles.name}>{item.name}</Text>
 
-            <View style={styles.infoContainer}>
+            {/* <View style={styles.infoContainer}>
               <View style={styles.infoItem}>
                 <Image
                   source={require('../../assets/ubicacionLista.png')}
@@ -73,14 +74,13 @@ const RestaurantList = ({ navigation }) => {
                 />
                 <Text style={styles.street}> {item.street}</Text>
               </View>
-            </View>
+            </View> */}
 
             <View style={styles.infoContainer}>
               <View style={styles.infoItem}>
-                <Image
-                  source={require('../../assets/relojLista.png')}
-                  style={styles.image}
-                />
+                  <Icon name="time" size={16} color="tomato" />
+                <Text style={styles.timing}> Horario:</Text>
+
                 <Text style={styles.timing}> {item.opening_time} - {item.closing_time}</Text>
               </View>
             </View>
@@ -107,18 +107,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#0B0B0D',
-    paddingTop: 35,
+    paddingTop: 50,
     padding: 10
   },
   infoContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    // marginVertical: 5,
+    marginVertical: 5,
   },
   infoItem: {
     flexDirection: 'row',
-    alignItems: 'center',
-    marginVertical: 3,
+    alignItems: 'left',
   },
   card: {
     flexDirection: 'row',
@@ -129,10 +128,10 @@ const styles = StyleSheet.create({
   },
   photo: {
     width: 130,
-    height: 80,
+    height: 100,
     borderRadius: 8,
-    marginLeft: 10,
-    marginRight: 10,
+    // marginLeft: 10,
+    // marginRight: 10,
 
   },
   info: {
@@ -147,6 +146,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     color: '#f5f5f6',
+    paddingTop: 25,
+    paddingRight:25
   },
   street: {
     fontSize: 12,
