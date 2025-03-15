@@ -59,10 +59,10 @@ const RestaurantList = ({ navigation }) => {
           style={styles.card}
           onPress={() => navigation.navigate('DetallesRestaurante', { item })}
         >
-          <Image
+          {/* <Image
             source={{ uri: `https://drive.google.com/uc?export=view&id=${item.photo} ` }}
             style={styles.photo}
-          />
+          /> */}
           <View style={styles.info}>
             <Text style={styles.name}>{item.name}</Text>
 

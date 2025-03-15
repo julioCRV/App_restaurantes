@@ -131,10 +131,10 @@ const Sucursales = ({ navigation }) => {
 
                         <View style={styles.infoContainer}>
                             <View style={styles.infoItem}>
-                                <Image
+                                {/* <Image
                                     source={require('../../assets/ubicacionLista.png')}
                                     style={styles.image}
-                                />
+                                /> */}
                                 <Text style={{ color: 'white', fontSize: 23 }}> {item.street}</Text>
                             </View>
                         </View>
@@ -149,10 +149,10 @@ const Sucursales = ({ navigation }) => {
               </View>
             </View> */}
                         <View style={styles.infoItem}>
-                            <Image
+                            {/* <Image
                                 source={require('../../assets/direccion.png')}
                                 style={styles.image}
-                            />
+                            /> */}
                             {/* <Icon name="directions" size={24} color="#f5f5f6" /> */}
                             <Text style={styles.street}> Dirección: {item.street}</Text>
                         </View>
@@ -169,10 +169,10 @@ const Sucursales = ({ navigation }) => {
                                 onPress={() => openWhatsApp(contact)}  // Pasa el contacto actual
                             >
                                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                                    <Image
+                                    {/* <Image
                                         source={require('../../assets/contacto.png')}
                                         style={styles.image}
-                                    />
+                                    /> */}
                                     <Text style={[styles.infoText, { color: isPressed ? '#1180ad' : '#f5f5f6' }]}>
                                         {contact}
                                     </Text>

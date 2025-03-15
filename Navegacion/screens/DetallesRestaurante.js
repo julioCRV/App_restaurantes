@@ -224,10 +224,10 @@ const DetailsScreen = ({ route }) => {
     };
     return (
         <ScrollView ref={scrollViewRef} style={styles.mainContainer}>
-            <Image
+            {/* <Image
                 source={{ uri: `https://drive.google.com/uc?export=view&id=${restaurantData.photo}` }}
                 style={styles.photo}
-            />
+            /> */}
 
             <ScrollView
                 style={styles.container}
@@ -243,10 +243,10 @@ const DetailsScreen = ({ route }) => {
                         keyExtractor={(dish) => dish.name}
                         renderItem={({ item }) => (
                             <View style={styles.dishContainer}>
-                                <Image
+                                {/* <Image
                                     source={{ uri: `https://drive.google.com/uc?export=view&id=${item.photo}` }}
                                     style={styles.dishPhoto}
-                                />
+                                /> */}
                                 <Text style={styles.dishName}>{item.name}</Text>
                                 <Pressable onPress={() => fetchDishDetails(item.code)} style={styles.closeButtonPlatillo}>
                                     <Icon name="menu-open" size={20} color="#f5f5f6" />
